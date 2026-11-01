@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products | COLDY WORLD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo"><img src="images/logo.jpg" alt="COLDY WORLD logo"></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html" class="active" aria-current="page">All Products</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  
+  <div class="header-icons">
+    <button aria-label="Search"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></button>
+    <button aria-label="Wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-8-5-8-11a5 5 0 0 1 8-3 5 5 0 0 1 8 3c0 6-8 11-8 11z"/></svg></button>
+    <button aria-label="Shopping bag" class="bag-btn"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span id="cart-count" class="cart-count">0</span></button>
+    <button aria-label="Account"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></button>
+  </div>
+</header>
+<main>
+<section class="banner">
+  <img src="images/all-products.jpg" alt="COLDY Collection" class="hero-img">
+  <div class="hero-text"><h1>Coldy<br>Collecton</h1><p>Discover your favourite COLDY merchandise</p>
+  </div>
+</section>
+<section class="container shop">
+  <aside class="sidebar">
+    <h3>Categories</h3>
+    <label>
+      <input type="radio" name="cat" value="all" checked>
+      All Products
+    </label>
+
+    <label>
+      <input type="radio" name="cat" value="accessories">
+      Accessories
+    </label>
+
+    <label>
+      <input type="radio" name="cat" value="collectibles">
+      Collectibles
+    </label>
+
+    <label>
+      <input type="radio" name="cat" value="clothing">
+      Clothing
+    </label>
+
+    <label>
+      <input type="radio" name="cat" value="plush">
+      Plush
+    </label>
+
+    <label>
+      <input type="radio" name="cat" value="bags">
+      Bags
+    </label>
+
+    <h3>Price</h3>
+    <label><input type="checkbox" class="price-filter" value="0-99"> ¥0 – ¥99</label>
+    <label><input type="checkbox" class="price-filter" value="100-199"> ¥100 – ¥199</label>
+    <label><input type="checkbox" class="price-filter" value="200-9999"> ¥200+</label>
+  </aside>
+  <div class="shop-main">
+    <div class="shop-top"><h2>All Products</h2>
+    <label>Sort by: <select id="sort"><option value="featured">Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option></select></label></div>
+    <div class="grid grid-3" id="product-grid">
+      
+      <article class="product-card" data-category="plush" data-price="99" data-name="COLDY Plush Toy">
+        <img src="images/plush-toy.jpg" alt="COLDY Plush Toy">
+        <h3>COLDY Plush Toy</h3>
+        <p class="price">¥99</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+
+      <article class="product-card" data-category="clothing" data-price="129" data-name="COLDY Baseball Cap">
+        <img src="images/baseball-cap.jpg" alt="COLDY Baseball Cap">
+        <h3>COLDY Baseball Cap</h3>
+        <p class="price">¥129</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+
+      <article class="product-card" data-category="clothing" data-price="219" data-name="COLDY Sweatshirt">
+        <img src="images/sweatshirt.jpg" alt="COLDY Sweatshirt">
+        <h3>COLDY Sweatshirt</h3>
+        <p class="price">¥219</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+      
+      <article class="product-card" data-category="clothing" data-price="129" data-name="COLDY T-Shirt">
+        <img src="images/tshirt.jpg" alt="COLDY T-Shirt">
+        <h3>COLDY T-Shirt</h3>
+        <p class="price">¥129</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+      
+      <article class="product-card" data-category="accessories" data-price="129" data-name="COLDY Pocket Scraf">
+        <img src="images/pocket-scraf.jpg" alt="COLDY Pocket Scraf">
+        <h3>COLDY Pocket Scarf</h3>
+        <p class="price">¥129</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+
+      <article class="product-card" data-category="accessories" data-price="99" data-name="COLDY Scarf">
+        <img src="images/scarf.jpg" alt="COLDY Scarf">
+        <h3>COLDY Scarf</h3>
+        <p class="price">¥99</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+      
+      <article class="product-card" data-category="bags" data-price="119" data-name="COLDY Embroidered Bag">
+        <img src="images/embroidered-bag.jpg" alt="COLDY Embroidered Bag">
+        <h3>COLDY Embroidered Bag</h3>
+        <p class="price">¥119</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+      
+      <article class="product-card" data-category="bags" data-price="79" data-name="COLDY Striped Bag">
+        <img src="images/striped-bag.jpg" alt="COLDY Striped Bag">
+        <h3>COLDY Striped Bag</h3>
+        <p class="price">¥79</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+      
+      <article class="product-card" data-category="collectibles" data-price="49" data-name="COLDY Card Holder">
+        <img src="images/card-holder.jpg" alt="COLDY Card Holder">
+        <h3>COLDY Card Holder</h3>
+        <p class="price">¥49</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+
+      <article class="product-card" data-category="collectibles" data-price="29" data-name="COLDY Large Badge Stand">
+        <img src="images/large-badge-stand.jpg" alt="COLDY Large Badge Stand">
+        <h3>COLDY Large Badge Stand</h3>
+        <p class="price">¥29</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+
+      <article class="product-card" data-category="collectibles" data-price="79" data-name="COLDY Medium Badge">
+        <img src="images/medium-badge.jpg" alt="COLDY Medium Badge">
+        <h3>COLDY Medium Badge</h3>
+        <p class="price">¥79</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+
+      <article class="product-card" data-category="collectibles" data-price="69" data-name="COLDY Small Badge">
+        <img src="images/small-badge.jpg" alt="COLDY Small Badge">
+        <h3>COLDY Small Badge</h3>
+        <p class="price">¥69</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+
+      <article class="product-card" data-category="accessories" data-price="69" data-name="COLDY Spring Clip">
+        <img src="images/spring-clip.jpg" alt="COLDY Spring Clip">
+        <h3>COLDY Spring Clip</h3>
+        <p class="price">¥69</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+
+      <article class="product-card" data-category="collectibles" data-price="49" data-name="COLDY Fridge Magnet">
+        <img src="images/fridge-magnet.jpg" alt="COLDY Fridge Magnet">
+        <h3>COLDY Fridge Magnet</h3>
+        <p class="price">¥49</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+
+      <article class="product-card" data-category="accessories" data-price="29" data-name="COLDY Metal Keychain">
+        <img src="images/metal-keychain.jpg" alt="COLDY Metal Keychain">
+        <h3>COLDY Metal Keychain</h3>
+        <p class="price">¥29</p>
+        <button class="btn btn-small add-to-cart">Add to Cart</button>
+      </article>
+    </div>
+    <p id="no-results" class="center" hidden>No products match your filters.</p>
+    <nav id="pagination" class="pagination" aria-label="Pagination"></nav>  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <p><a href="index.html">COLDY WORLD</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact</a> | <a href="contact.html#social">Social Media</a></p>
+  <p>&copy; 2026 COLDY WORLD. Fan-made school project.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

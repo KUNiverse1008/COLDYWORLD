@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | COLDY WORLD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo"><img src="images/logo.jpg" alt="COLDY WORLD logo"></a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="products.html">All Products</a>
+    <a href="contact.html" class="active" aria-current="page">Contact Us</a>
+  </nav>
+  <div class="header-icons">
+    <button aria-label="Search"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></button>
+    <button aria-label="Wishlist"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-8-5-8-11a5 5 0 0 1 8-3 5 5 0 0 1 8 3c0 6-8 11-8 11z"/></svg></button>
+    <button aria-label="Shopping bag" class="bag-btn"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span id="cart-count" class="cart-count">0</span></button>
+    <button aria-label="Account"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></button>
+  </div>
+</header>
+<main>
+<section class="banner">
+  <img src="images/contact-us.jpg" at="Contact Us" class="hero-img">
+  <div class="hero-text">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you.</p>
+  </div>
+</section>
+<section class="section container contact">
+  <div class="contact-info" id="social"><h2>Get in Touch</h2><p>Have questions about our products? Send us a message!</p>
+    <p class="row"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> <a href="mailto:coldyworld@coldy.com">hello@coldy.com</a></p>
+    <p class="row"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg> <a href="https://www.instagram.com/" target="_blank" rel="noopener">coldyworld.official</a></p>
+    <p class="row"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2"/></svg> Iceland</p>
+    <div class="socials"><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">YT</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">TT</a><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">IG</a><a href="https://x.com/" target="_blank" rel="noopener" aria-label="X">X</a></div>
+  </div>
+  <form id="contact-form" novalidate>
+    <input type="text" id="name" placeholder="Name" aria-label="Name">
+    <input type="email" id="email" placeholder="Email Address" aria-label="Email Address">
+    <select id="subject" aria-label="Subject"><option value="">Subject</option><option>Product question</option><option>Order help</option><option>Other</option></select>
+    <textarea id="message" rows="5" placeholder="Message" aria-label="Message"></textarea>
+    <p id="form-msg" class="form-msg" role="alert"></p>
+    <button type="submit" class="btn btn-wide">Submit Message</button>
+  </form>
+</section>
+<section class="container faq"><h2>Frequently Asked Questions</h2>
+  <details><summary>How long does delivery take?</summary><p>Sample answer: orders usually arrive within 5–7 working days.</p></details>
+  <details><summary>Can I return an item?</summary><p>Sample answer: unused items can be returned within 14 days.</p></details>
+  <details><summary>Are the products official?</summary><p>This is a fan-made school project, so no real products are sold.</p></details>
+</section>
+</main>
+<footer class="site-footer">
+  <p><a href="index.html">COLDY WORLD</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact</a> | <a href="contact.html#social">Social Media</a></p>
+  <p>&copy; 2026 COLDY WORLD. Fan-made school project.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
